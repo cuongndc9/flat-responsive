@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+/*Global*/
+.container {
+    /* width: 85%; */
+    margin: auto;
+    overflow: hidden;
+}
+
+h2, h3 {
+    text-align: center;
+    margin: 20px;
+}
+
+li {
+     display: inline;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    text-align: justify;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}
+
+/*Header*/
+header {
+    background: linear-gradient(to right,#07C0D0,#8B0BE7);
+    padding: 15px 30px;
+    text-align: center;
+}
+
+
+header #branding {
+    float: left;
+    color: rgba(255,255,255,0.9);
+}
+
+header #branding h1:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+
+header nav {
+    float: right;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+header ul {
+    padding: 5px;
+}
+
+header li {
+    padding: 0 20px;
+    
+}
+
+header li a {
+    color: rgba(255,255,255,.6);
+}
+
+header li a:hover {
+    color: #FFFFFF;
+}
+
+header .current {
+    color: #FFFFFF;
+}
+
+header #sign-in {
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgba(0, 0, 0, .5);
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+}
+
+header #sign-in:hover {
+    background-color: #e7e6e1;
+}
+
+header nav #menu-icon {
+    width: 40px;
+    height: 40px;
+    background: url(./../img/nav.png) no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+/* Banner */
+section#banner {
+    background: linear-gradient(to right,#07C0D0,#8B0BE7);
+    /* min-height: 350px; */
+    text-align: center;
+}
+
+section#banner img {
+    height: 350px;
+}
+
+/* Boxes */
+section#boxes {
+    color: white;
+}
+
+section#boxes .box{
+    width: 25%;
+    float: left;
+    padding: 15px 10px;
+    text-align: center;
+}
+
+section#boxes .box i {
+    font-size: 55px;
+    padding: 5px;
+}
+
+section#boxes #html {
+    background: #BCE784;
+}
+
+section#boxes #css {
+    background: #5DD39E;
+}
+
+section#boxes #seo {
+    background: #348AA7;
+}
+
+section#boxes #social {
+    background: #525174;
+}
+
+/* Inner-Wrapper-1 */
+section#inner-wrapper-1 .content {
+    overflow: hidden;
+    padding: 15px 30px;
+    height: 250px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #616161;
+}
+
+section#inner-wrapper-1 .content article {
+    width: 50%;
+    float: left;
+}
+
+section#inner-wrapper-1 .content aside {
+    width: 50%;
+    float: right;
+}
+
+section#inner-wrapper-1 .img-content {
+    height: 250px;
+    margin-top: -30px;
+}
+
+section#inner-wrapper-1 #content-1 aside {
+    background-color: #ff7e67;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+section#inner-wrapper-1 #content-2 article {
+    background-color: #15b7b9;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+section#inner-wrapper-1 #content-3 aside {
+    background-color: #cabbe9;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+/* Inner-Wrapper-2 */
+section#inner-wrapper-2 .item {
+    width: 33.33%;
+    float: left;
+    color: #FFFFFF;
+    padding: 10px 20px;
+}
+
+section#inner-wrapper-2 #google {
+    background-color: #404b69;
+}
+
+section#inner-wrapper-2 #marketing {
+    background-color: #f73859;
+}
+
+section#inner-wrapper-2 #customer {
+    background-color: #913175;
+}
+
+/* Similey */
+section#smiley {
+    background-color: #616161;
+    text-align: center;
+    padding-top: 5px;
+}
+
+section#smiley img {
+    height: 20px;
+}
+
+/* Footer */
+footer {
+    padding: 15px;
+    background: linear-gradient(to right,#07C0D0,#8B0BE7);
+    color: #FFFFFF;
+}
+
+footer ul {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    padding-bottom: 10px;
+}
+
+footer li {
+    float: left;
+    width: 20%;
+}
+
+footer a {
+    font-size: 30px;
+    color: rgba(255,255,255,.6);
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer p {
+    clear: both;
+    text-align: center;
+}
+
+/* Media Queries */
+@media screen and (max-width:768px) {
+    section#boxes .box,
+    section#inner-wrapper-1 .content article,
+    section#inner-wrapper-1 .content aside,
+    section#inner-wrapper-2 .item {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    section#inner-wrapper-1 .content {
+        overflow: hidden;
+        height: auto;
+    }
+
+    section#inner-wrapper-1 .img-content {
+        margin-top: 0px;
+    }
+
+    header nav {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    header nav ul {
+        display: none;
+        position: absolute;
+        right: 10px;
+        /* background: linear-gradient(to right,#07C0D0,#8B0BE7); */
+        background-color: #07C0D0;
+        border-radius: 5px;
+    }
+
+    header nav:hover ul,
+    header nav:active ul {
+        display: block;
+    }
+
+    header nav ul li {
+        display: block;
+        padding: 10px 15px;
+    }
+
+    header #sign-in {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    header nav #menu-icon {
+        display: inline-block;
+        z-index: 10;
+        margin-top: 4px;
+    }
+
+    section#boxes .box{
+        padding: 10px;
+        text-align: center;
+    }
+
+    section#boxes .box h3,
+    section#inner-wrapper-2 h3,
+    section#inner-wrapper-1 h2{
+        margin: 10px;
+    }
+
+    section#boxes .box i {
+        font-size: 30px;
+        padding: 5px;
+    }
+
+    section#banner img {
+        height: auto;
+    }
+
+    section#inner-wrapper-1 .content {
+        padding: 10px 15px;
+    }
+
+    section#inner-wrapper-1 .img-content {
+        height: 150px;
+        margin-top: -15px;
+    }
+
+    .hand-mobile {
+        display: none;
+    }
+}
