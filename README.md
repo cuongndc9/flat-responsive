@@ -34,6 +34,6 @@ MIT
 
 
 <!-- INSPIRATIONAL_QUOTE_START -->
-The best way to predict the future is to create it.
-🧑‍💻
+Stay curious. Keep learning. Keep growing.
+👻
 <!-- INSPIRATIONAL_QUOTE_END -->
